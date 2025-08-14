@@ -1,0 +1,213 @@
+1)
+package string;
+
+import java.util.Scanner;
+
+public class Example {
+	public static void main(String[]args)
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter first:");
+		String str1=sc.nextLine();
+		System.out.println("enter first:");
+		String str2=sc.nextLine();
+		if(str1.equals(str2)) {
+			System.out.println("the strings are lexicographically equal");
+			
+		}
+		else {
+			System.out.println("the strings are  not lexicographically equal");
+		}
+		sc.close();	
+	}
+
+}
+
+OUTPUT:
+enter the first string:
+YUVI
+enter the second string
+YUVI
+the strings are equal
+
+
+2)
+package string;
+
+import java.util.Scanner;
+
+public class EXAMPLE22 {
+	public static  void main(String []args)
+	
+	{
+	Scanner sc =new Scanner(System.in);
+	System.out.println("enter the first string:");
+	String str1 =sc.nextLine();
+	System.out.println("enter the second string");
+	String str2=sc.nextLine();
+	if(str1.equalsIgnoreCase(str2)) {
+		System.out.println("the strings are equal");
+		
+	}
+	else {
+		System.out.println("the strings are not equal");
+	}
+	
+	sc.close();
+			
+	}
+}
+
+OUTPUT:enter the first string:
+yuvi
+enter the second string
+YUVI
+the strings are equal
+
+
+3)
+package string;
+
+import java.util.Scanner;
+
+public class Example3 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the string 1 in  sequence");
+		String str1=sc.nextLine();
+		System.out.println("enter the string 2 in sequence");
+		String str2=sc.nextLine();
+		if(str1.contains(str2))
+		{
+			System.out.println("string contains the specific sequence of char values");
+			
+		}
+		else {
+			System.out.println("string does not contain any specific sequence of ch values ");
+		}
+		sc.close();
+	}
+
+}
+
+
+OUTPUT:
+enter the string 1 in  sequence:
+java is a programming language
+enter the string 2 in sequence:
+is
+string contains the specific sequence of char values
+
+4)
+package string;
+
+import java.util.Scanner;
+
+public class Example4 {
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the string 1");
+		String str1=sc.nextLine();
+		System.out.println("enter the string 2");
+		String str2=sc.nextLine();
+		if( str1.endsWith(str2))
+		{
+			System.out.println("string1 ends with string 2");
+			
+		}
+		else {
+			System.out.println("string1 does not ende with string2");
+		}
+		sc.close();
+	}
+
+}
+
+
+OUTPUT:
+enter the string 1
+basic java programs
+enter the string 2
+basic looping
+string1 does not ende with string2
+
+
+
+
+
+
+
+
+
+STRINGBUFFER:
+
+
+1{)
+
+
+package string;
+
+public class Example4 {
+	public static void main(String[]args) {
+		StringBuffer sbn=new StringBuffer("jaa");
+		System.out.println("the word is "+sbn);
+		sbn.insert(2, "v");{
+		System.out.println(sbn);
+		}
+	}
+}
+
+OUTPUT;
+the word is jaa
+java
+
+
+2}
+
+public class Example4 {
+	public static void main(String[]args) {
+		StringBuffer sbn=new StringBuffer("HAPPY BIRTHDAY");
+		System.out.println(sbn);
+	}
+}
+
+OUTPUT:
+HAPPY BIRTHDAY
+
+
+3)
+public class Example4 {
+	public static void main(String[]args) {
+		StringBuffer sbn=new StringBuffer("it's good");
+		sbn.insert(5,"not");
+		System.out.println(sbn);
+	}
+}
+
+OUTPUT;
+it's not good
+
+
+4)
+public class Example4 {
+	public static void main(String[]args) {
+		StringBuffer sbn=new StringBuffer(" java and python");
+		sbn.delete(0,5);
+		System.out.println(sbn);
+	}
+}
+
+OUTPUT: and python
+
+
+5)
+public class Example4 {
+	public static void main(String[]args) {
+		StringBuffer sbn=new StringBuffer(" hello world");
+		sbn.replace(0,5,"goodbye");
+		System.out.println(sbn);
+	}
+}
+
+OUTPUT;
+goodbyeo world
